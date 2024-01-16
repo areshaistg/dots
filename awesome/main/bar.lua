@@ -46,10 +46,8 @@ local tasklist_buttons = gears.table.join(
 )
 
 awful.screen.connect_for_each_screen(function(s)
-    awful.tag({})
-
     s.mypromptbox = awful.widget.prompt()
-    awful.tag({ "1", "2", "3", "4", "5", "6", "7", "8", "9" }, s, awful.layout.layouts[1])
+
     s.mylayoutbox = awful.widget.layoutbox(s)
     s.mylayoutbox:buttons(gears.table.join(
                            awful.button({ }, 1, function () awful.layout.inc( 1) end),
