@@ -40,4 +40,4 @@ awful.screen.connect_for_each_screen(function(s)
     awful.tag({"一", "二", "三", "四", "五", "六", "七", "八", "九"}, s, awful.layout.layouts[1])
 end)
 
-awful.spawn("picom -b")
+awful.spawn("picom -b --experimental-backend")
