@@ -127,7 +127,7 @@ for i = 1, 9 do
 		end
 	    end
 	end),
-	["toggle client on tag #" .. i] = key({modkey, "shift", "control"}, "#"..i+9, function()
+	["toggle client on tag #" .. i] = key({modkey, "Shift", "Control"}, "#"..i+9, function()
 	    if client.focus then
 		local tag = client.focus.screen.tags[i]
 		if tag then
